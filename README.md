@@ -58,6 +58,9 @@ githubの画面からpull-requestを出すもしくはhub(brew install hub)コ�
 
 ## 8. マージする
 
+# shell
+zshを入れるとブランチ名の補完がきく
+oh-my-zshがおすすめ設定
   
 # ドキュメントはどうする？
 - wikiとかREADME.mdに書く
