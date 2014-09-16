@@ -27,11 +27,24 @@ pull request の実験用
 ```
 # git checkout -b newpr01
 ```
-## 2. 空でコミットする
+## 2. 空でコミット& push する
 ```
 # git commit --allow-empty
+# git push origin newpr01
 ```
-## 3. 何か変更を加えてコミット
+## 3. 新しいpull-requestを作る
+githubの画面からpull-requestを出すもしくはhub(brew install hub)コマンドから
+```
+# hub pull-request
+```
+![プルリクエストの作成](./create-pr.png)
+## 4. pull-requestにタスクを書く
+```
+- [ ] スクリーンショットを追加
+- [ ] テストコードを書く
+```
+![プルリクエストの作成](./create-pr-edit.png)
+## 5. 何か変更を加えてコミット
 ```
 # git add 対象のファイル
 # git commit -m "コミットのメッセージ"
@@ -40,25 +53,15 @@ pull request の実験用
 ```
 # git commit -a
 ```
-## 4. push
-```
-# git push origin newpr01
-```
-## 5. 新しいpull-requestを作る
-githubの画面からpull-requestを出すもしくはhub(brew install hub)コマンドから
-```
-# hub pull-request
-```
-## 6. pull-requestにタスクを書く
-```
-- [ ] スクリーンショットを追加
-- [ ] テストコードを書く
-```
 ## 7. コミット→pushの繰り返し
 必要であれば、他の開発者とやり取りしながら
 
 ## 8. マージする
+![マージ](./merge.png)
 
+# shell
+zshを入れるとブランチ名の補完がきく
+oh-my-zshがおすすめ設定
   
 # ドキュメントはどうする？
 - wikiとかREADME.mdに書く
