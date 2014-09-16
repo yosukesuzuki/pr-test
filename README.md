@@ -1,9 +1,6 @@
-pr-test
-=======
+GithubおよびPull Requestについて
+================================
 
-pull request の実験用
-
-説明すること
 # git/githubのメリット
 - 分散型のアーキテクチャー
 - pull-request型開発
@@ -18,9 +15,11 @@ pull request の実験用
 - deployment/staging
   - ステージングサーバーにあがっているソースコード
   - masterからpull-requestを送ってマージする
+![stagingへのプルリクエスト](./create-pr-to-staging.png)
 - deployment/production
   - 本番サーバーにあがっているコード
   - deployment/stagingからpull-requestを送ってマージする
+![本番へのデプロイ前の確認](./create-pr-production.png)
 
 # pull-request型開発
 ## 1. コード変更の際にmasterブランチから新しいブランチを切る
@@ -59,10 +58,18 @@ githubの画面からpull-requestを出すもしくはhub(brew install hub)コ�
 ## 8. マージする
 ![マージ](./merge.png)
 
+# gitignoreを使う
+- テンポラリーなファイルを管理しないための指定
+- githubで新規のリポジトリを作るときにおすすめのセットを追加できる
+
 # shell
-zshを入れるとブランチ名の補完がきく
-oh-my-zshがおすすめ設定
-  
+- zshを入れるとブランチ名の補完がきく
+- oh-my-zshがおすすめ設定
+
+# testの自動実行
+- Circle CIを利用できるように契約済
+- circle.ymlをリポジトリに置いておくと自動実行
+
 # ドキュメントはどうする？
 - wikiとかREADME.mdに書く
 - もしくはbacklogとかでファイル管理
