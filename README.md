@@ -57,6 +57,7 @@ githubの画面からpull-requestを出すもしくはhub(brew install hub)コ�
 必要であれば、他の開発者とやり取りしながら
 
 ## 8. マージする
+![マージ](./merge.png)
 
 # shell
 zshを入れるとブランチ名の補完がきく
